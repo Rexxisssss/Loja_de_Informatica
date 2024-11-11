@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(14,0,255);
+    background: linear-gradient(153deg, rgba(14,0,255,1) 0%, rgba(1,37,154,1) 35%, rgba(229,0,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Exo 2';
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background: rgb(187, 187, 187);
+    color: rgb(0, 0, 0);
+    width: 85%;
+    margin: 0 auto;
+    padding: 0px 0px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header li{
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+header li:hover{
+    background-color: #a1a0a0;
+    border-radius: 70px;
+    width: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul {
+    list-style: none; /* Remove os pontos da lista */
+    margin: 0px;
+    padding: 10px;
+    display: flex; /* Faz os itens da lista ficarem lado a lado */
+    gap: 100px; /* Espaçamento entre os itens da lista */
+    margin-left: 4%;
+    margin-right: 25%;
+    
+}
+
+header nav ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+    opacity: 88%;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinha o dropdown abaixo do item do menu */
+    left: -30px;
+    background-color: #c2c2c2;
+    opacity: 95%;
+    padding: auto;
+    width: 170%;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.dropdown li {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.dropdown li:hover {
+    color: #000000;
+    padding: 0% 5%;
+    font-weight: bold;
+}
+
+main{
+    background: linear-gradient(#dbdada, #a5a5a5);
+    width: 85%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.overlay-image {
+    width: 40%; /* Tamanho da imagem sobreposta */
+    position: absolute;
+    top: 20px; /* Ajuste a posição conforme necessário */
+    left: 30%;
+    z-index: 2; /* Fica sobre a imagem de fundo */
+}
+
+.img{
+    filter:blur(2px)
+}
+
+.fechado{
+    width: 8%;
+    transition: transform 0.3s ease;
+}
+.conteudo:hover .fechado{
+    transform: rotate(90deg);
+}
+
+.conteudo{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 5px; /* Espaçamento entre a imagem e o texto */
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(#ccc , #fff);
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+h2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção de 16:9 */
+    
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1;
+    
+}
+
+iframe{
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 4%;
+    margin-bottom: 5%;
+    border-radius: 20px;
+}
+
+
+.switch {
+    float: left;
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.troti{
+    margin-left: 30%;
+    border-radius: 20px;
+}
+
+.troti2{
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 20px;
+}
+
+.redes{
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+
+p{
+    margin-left: 4%;
+    font-weight: 10000;
+    font-size: large;
+    text-align: center;
+    margin-right: 5%;
+    margin-bottom: 3%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

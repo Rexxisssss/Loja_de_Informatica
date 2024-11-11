@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="themeStylesheet" rel="stylesheet" href="styles/index_style.css">
+    <title>Página Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox" id="toggleButton" onclick="trocarEstilo()">
+        <span class="slider"></span>
+    </label>
+    <header>
+        <img src="img/rexxistech.png" class="overlay-image">
+        <img src="img/header.png" width="100%" class="img">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <b>Início:</b>
+                    </a>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado"> 
+                        <b>Computadores:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="pc_gamer.html">
+                            <li>Gaming</li>
+                        </a>
+                        <a href="pc_office.html">
+                            <li>Escritório</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado">
+                        <b>Periféricos:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="per_gamer.html">
+                            <li>Gaming</li>
+                        </a>
+                        <a href="per_office.html">
+                            <li>Escritório</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado"> 
+                        <b>Acessorios:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="cabos.html">
+                            <li>Cabos/Carregadores</li>
+                        </a>
+                        <a href="malas.html">
+                            <li>Malas/mochilas</li>
+                        </a>
+                        <a href="mousepads.html">
+                            <li>Mousepads</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="servicos.html">
+                        <b>Serviços</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p style="text-align: center;">Esta Página está em manutenção!</p>
+        <br>
+        <br>
+        <img src="img/manutencao.gif" width="80%" style="margin-left: 10%;">
+        <a href="contactos.html">
+            <table width="30%">
+                <th class="texto">
+                    Contacte-nos!
+                    <img src="img/mao.png" width="10%">
+                </th>
+            </table>
+        </a>
+    </main>
+    <footer>
+        <h4><center>Rexxis<span>&copy;</span>|Todos os direitos reservados</h4>
+    </footer>
+
+    <script src="scripts/index_script.js"></script>
+</body>
+</html>

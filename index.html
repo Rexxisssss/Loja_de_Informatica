@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="themeStylesheet" rel="stylesheet" href="styles/index_style.css">
+    <title>Página Inicial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox" id="toggleButton" onclick="trocarEstilo()">
+        <span class="slider"></span>
+    </label>
+    <header>
+        <img src="img/rexxistech.png" class="overlay-image">
+        <img src="img/header.png" width="100%" class="img">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <b>Início:</b>
+                    </a>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado"> 
+                        <b>Computadores:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="pc_gamer.html">
+                            <li>Gaming</li>
+                        </a>
+                        <a href="pc_office.html">
+                            <li>Escritório</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado">
+                        <b>Periféricos:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="per_gamer.html">
+                            <li>Gaming</li>
+                        </a>
+                        <a href="per_office.html">
+                            <li>Escritório</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <div class="conteudo">
+                        <img src="img/triangulo_fechado.png" class="fechado"> 
+                        <b>Acessorios:</b>
+                    </div>
+                    <ul class="dropdown">
+                        <a href="cabos.html">
+                            <li>Cabos/Carregadores</li>
+                        </a>
+                        <a href="malas.html">
+                            <li>Malas/mochilas</li>
+                        </a>
+                        <a href="mousepads.html">
+                            <li>Mousepads</li>
+                        </a>
+                    </ul>
+                </li>
+                <li>
+                    <a href="servicos.html">
+                        <b>Serviços</b>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>As nossas Instalações:</h2>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+        
+            <div class="slides">
+                <div class="slide">
+                    <img src="img/imagem1.webp" alt="Imagem 1">
+                </div>
+                <div class="slide">
+                    <img src="img/imagem2.webp" alt="Imagem 2">
+                </div>
+                <div class="slide">
+                    <img src="img/imagem3.webp" alt="Imagem 3">
+                </div>
+            </div>
+        </div>
+        <h2>Quem Somos:</h2>
+        <div class="caixa">
+            <div class="caixa_texto">
+                <h3>
+                    A RexxisTECH é a melhor loja de informática para todos os entusiastas de tecnologia 
+                    em Portugal. Situada no coração da cidade de Vila Franca de Xira, a loja destaca-se pelo atendimento especializado 
+                    e pelo vasto leque de produtos de alta qualidade. Seja para profissionais, gamers, ou 
+                    utilizadores ocasionais, a RexxisTECH oferece uma gama completa de computadores, portáteis, 
+                    componentes, periféricos e acessórios das marcas mais conceituadas do mercado.
+                </h3>
+                <br>
+                <br>
+                <br>
+                <img src="img/texto1.png">
+            </div>
+            <div class="caixa_texto">
+                <h3 style="text-align: center;">
+                    Ao entrar na loja, os clientes encontram um espaço moderno e organizado, com produtos 
+                    cuidadosamente expostos e prontos para serem testados. A equipa da RexxisTECH é composta 
+                    por técnicos e consultores experientes, sempre disponíveis para ajudar na escolha do equipamento 
+                    ideal ou para esclarecer qualquer dúvida técnica. Além disso, a loja oferece serviços de reparação 
+                    e manutenção de equipamentos, com um compromisso de rapidez e qualidade.
+                </h3>
+                <br>
+                <br>
+                <br>
+                <img src="img/texto2.png">
+            </div>
+            <div class="caixa_texto">
+                <h3 style="text-align: right;">
+                    A RexxisTECH é também conhecida pelas suas soluções personalizadas, adaptadas às necessidades 
+                    específicas de cada cliente. Quer esteja à procura de um PC gaming topo de gama, de um portátil 
+                    para trabalho remoto, ou de uma atualização de componentes, a equipa faz questão de oferecer as 
+                    melhores opções, sempre com preços competitivos.
+                    Para quem valoriza tecnologia de ponta e um serviço de excelência, a RexxisTECH é o destino certo. 
+                    Mais do que uma loja de informática, é um espaço onde a inovação e o compromisso com o cliente estão 
+                    em primeiro lugar.
+                </h3>
+                <img src="img/texto3.png">
+            </div>
+        </div>
+        
+        <h2>Destaques da loja:</h2>
+        <a href="manutenção.html">
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/destaque 1.jpg">
+                    <h3>1599,99€</h3>
+                    <h3>Asus ROG Strix G15</h3>
+                    <p>Portátil Gamer</p>
+                </div>
+            </a>
+            <a href="manutenção.html">
+                <div class="product">
+                    <img src="img/destaque 2.jpg">
+                    <h3>180,50€</h3>
+                    <h3>Blue Microphones Yeti</h3>
+                    <p>Microfone</p>
+                </div>
+            </a>
+            <a href="manutenção.html">
+                <div class="product">
+                    <img src="img/destaque 3.jpg">
+                    <h3>128.99€</h3>
+                    <h3>Logitech PRO X GAMING Headset</h3>
+                    <p>Headphones Gamer</p>
+                </div>
+            </div>
+        </a>
+        <a href="contactos.html">
+            <table width="30%">
+                <th class="texto">
+                    Contacte-nos!
+                    <img src="img/mao.png" width="10%">
+                </th>
+            </table>
+        </a>
+    </main>
+    <footer>
+        <h4><center>Rexxis<span>&copy;</span>|Todos os direitos reservados</h4>
+    </footer>
+
+    <script src="scripts/index_script.js"></script>
+</body>
+</html>

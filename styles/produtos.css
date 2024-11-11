@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(14,0,255);
+    background: linear-gradient(153deg, rgba(14,0,255,1) 0%, rgba(1,37,154,1) 35%, rgba(229,0,255,1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Exo 2';
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header {
+    background: rgb(187, 187, 187);
+    color: rgb(0, 0, 0);
+    width: 85%;
+    margin: 0 auto;
+    padding: 0px 0px;
+}
+
+header li{
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+header li:hover{
+    background-color: #a1a0a0;
+    border-radius: 70px;
+    width: auto;
+}
+
+header nav ul {
+    list-style: none; /* Remove os pontos da lista */
+    margin: 0px;
+    padding: 10px;
+    display: flex; /* Faz os itens da lista ficarem lado a lado */
+    gap: 100px; /* Espaçamento entre os itens da lista */
+    margin-left: 4%;
+    margin-right: 25%;
+    
+}
+
+header nav ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 0px 20px;
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+    opacity: 88%;
+    border-radius: 20px;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinha o dropdown abaixo do item do menu */
+    left: -30px;
+    background-color: #c2c2c2;
+    opacity: 95%;
+    padding: auto;
+    width: 170%;
+    list-style: none;
+}
+
+.dropdown li {
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+.dropdown li:hover {
+    color: #000000;
+    padding: 0% 5%;
+    font-weight: bold;
+}
+
+main{
+    background: linear-gradient(#fff, #a5a5a5);
+    width: 85%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.overlay-image {
+    width: 40%; /* Tamanho da imagem sobreposta */
+    position: absolute;
+    top: 20px; /* Ajuste a posição conforme necessário */
+    left: 30%;
+    z-index: 2; /* Fica sobre a imagem de fundo */
+}
+
+.img{
+    filter:blur(2px)
+}
+
+.fechado{
+    width: 8%;
+    transition: transform 0.3s ease;
+}
+.conteudo:hover .fechado{
+    transform: rotate(90deg);
+}
+
+.conteudo{
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a imagem e o texto */
+    gap: 5px; /* Espaçamento entre a imagem e o texto */
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(#ccc , #fff);
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Navegação com pontos */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* Mostrar slides com base no rádio selecionado */
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/* Alterar cor do botão ativo */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background-color: #333;
+}
+
+h2{
+    margin-left: 2%;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Proporção de 16:9 */
+    
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1;
+    
+}
+
+iframe{
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-left: 9%;
+    border-radius: 20px;
+}
+
+.caixa{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.caixa_texto{
+    border: 1px solid #ddd;
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.caixa_texto h3 {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+.caixa_texto img{
+    margin-top: 10%;
+    width: 50%; /* Ajusta a imagem ao tamanho do container */
+    height: auto;
+    border-radius: 8px;
+    margin-left: 25%;
+}
+
+p{
+    font-size: xx-large;
+    margin-top: 5%;
+}
+
+.texto{
+    font-size: xx-large;
+}
+
+table{
+    background-color: #ccc;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    margin-left: 35%;
+    padding: 6px;
+    text-align: center;
+    border-radius: 70px;
+    box-shadow: 15px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+    gap: 20px; /* Espaço entre os itens */
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: box-shadow 0.3 ease;
+}
+
+.product img {
+    width: 100%; /* Ajusta a imagem ao tamanho do container */
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+
+.product p {
+    font-size: 1em;
+    color: #555;
+}
+
+.product:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    border-color: #000000;
+}
+
+button{
+    float: left;
+    z-index: 1000;
+    position: fixed;
+    width: 10%;
+    height: 7%;
+    border-radius: 80px;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+
+.switch {
+    float: left;
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    margin-left: 1%;
+    margin-top: 1%;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #000000;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
